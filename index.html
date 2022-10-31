@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row offset-sm-1">
+      <!-- Header part -->
+      <section class="header col-md-4 col-sm-10">
+        <h1 style="    font-family: 'Aladin', cursive;" >MAUSAM<br />Weather Viewer</h1><br /><br />
+        <div class="mapouter">
+          <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvass"
+              
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+              href="https://www.whatismyip-address.com"></a><br>
+            <a href="https://www.embedgooglemap.net"></a>
+            
+          </div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <p style="    font-family: 'Aladin', cursive;">
+          Coded with ❤ & 🍵 By
+          <a href="https://github.com/AmandeepSinghBisht" target="_blank">Amandeep Singh</a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/amandeep-singh-bisht/" class="fa fa-linkedin"></a>
+          <a href="https://github.com/AmandeepSinghBisht" class="fa fa2 fa-github"></a>
+          <a href="https://wa.me/+919988569257" class="fa fa3 fa-whatsapp"></a>
+        </p>
+      </section>
+
+      <section class="main col-md-7 col-sm-10">
+        <!-- input section -->
+        <section class="inputs">
+          <input type="text" placeholder="Enter any city..." id="cityinput" />
+          <input type="submit" value="Submit" id="add" />
+          <button placeholder="submit" id="add"></button>
+        </section>
+
+        <div class="location">
+          <img src="img\loc.svg" class="location-img" alt="location img" style="width: 100%" />
+        </div>
+
+        <!-- Display section -->
+        <section class="display">
+          <div class="wrapper">
+            <h2 id="cityoutput"></h2>
+            <p id="description"></p>
+            <p id="temp"></p>
+            <p id="wind"></p>
+          </div>
+        </section>
+      </section>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
